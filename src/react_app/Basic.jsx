@@ -7,9 +7,8 @@ const Basic = () => {
   };
   return (
     <>
-      Basic React App
       <div>{count}</div>
-      <button onClick={addCount}>Add Count</button>
+      <button onClick={addCount}>Add Count (React)</button>
     </>
   );
 };
