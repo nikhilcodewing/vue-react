@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useState } from "react";
 
-const Basic = (props) => {
+const Basic = () => {
+  const [count, setCount] = useState(0);
+  const addCount = () => {
+    setCount(count + 1);
+  };
   return (
-    <div>Basic</div>
-  )
-}
+    <>
+      Basic React App
+      <div>{count}</div>
+      <button onClick={addCount}>Add Count</button>
+    </>
+  );
+};
 
-export default Basic
+export default Basic;

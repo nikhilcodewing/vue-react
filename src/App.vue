@@ -1,7 +1,5 @@
 <template>  
-  <BasicPure :foo="foo">  
-    <div>the children</div>  
-  </BasicPure>  
+  <BasicPure/>
 </template>  
   
 <script>  
@@ -13,7 +11,7 @@ export default {
   components: {  
     BasicPure: applyPureReactInVue(BasicReactComponent)  
   },  
-  setup() {  
+  setup() {
     return {  
       foo: ref('Hello!')  
     }  
