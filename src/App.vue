@@ -1,12 +1,12 @@
 <template>
   <div>
-    <!-- <Counter /> -->
-    <BasicPure />
+    <Hello />
+    <Editor />
   </div>
 </template>
 
 <script setup>
-import Counter from "./vue_app/Counter.vue";
+import Hello from "./vue_app/Hello.vue";
 </script>
 <script>
 import { applyPureReactInVue } from "veaury";
@@ -16,7 +16,7 @@ import { ref } from "vue";
 
 export default {
   components: {
-    BasicPure: applyPureReactInVue(Skeleton),
-  }
+    Editor: applyPureReactInVue(Skeleton),
+  },
 };
 </script>
